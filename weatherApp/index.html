@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather in Ghana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg" id="bg"></div>
+  <div class="container">
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Search - Accra, Kumasi, Tamale">
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="weather-card show" id="weatherCard">
+      <div class="top">
+        <p id="location">Accra, Ghana</p>
+        <span class="dot"></span>
+      </div>
+      <h2 id="title">Weather in Accra</h2>
+      <h1 id="temp">--°C</h1>
+      <div class="info-row">
+        <img id="weatherIcon" src="" alt="">
+        <span id="desc">loading...</span>
+      </div>
+      <p class="small" id="humidity">Humidity: --%</p>
+      <p class="small" id="wind">Wind speed: -- km/h</p>
+    </div>
+    <p class="error" id="error"></p>
+    <p style="margin-top:15px; font-size:12px; opacity:0.7; background:rgba(0,0,0,0.5); padding:5px 10px; border-radius:5px;">Tip: Add your OpenWeatherMap API key in script.js</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
