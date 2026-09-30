@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanban Board - SYNTECXHUB Project 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>SYNTECXHUB <span>Kanban</span></h1>
+    <div class="actions">
+      <button class="btn-clear" onclick="clearBoard()">Clear All</button>
+      <button class="btn-primary" onclick="openModal('todo')">+ New Task</button>
+    </div>
+  </header>
+
+  <main class="board" id="board">
+    <section class="column" data-col="todo">
+      <div class="col-header">
+        <div class="col-title"><span class="dot todo-dot"></span> To-Do <span class="col-count" id="count-todo">0</span></div>
+        <button class="add-btn" onclick="openModal('todo')">+</button>
+      </div>
+      <div class="task-list" data-list="todo"></div>
+    </section>
+
+    <section class="column" data-col="doing">
+      <div class="col-header">
+        <div class="col-title"><span class="dot doing-dot"></span> Doing <span class="col-count" id="count-doing">0</span></div>
+        <button class="add-btn" onclick="openModal('doing')">+</button>
+      </div>
+      <div class="task-list" data-list="doing"></div>
+    </section>
+
+    <section class="column" data-col="done">
+      <div class="col-header">
+        <div class="col-title"><span class="dot done-dot"></span> Done <span class="col-count" id="count-done">0</span></div>
+        <button class="add-btn" onclick="openModal('done')">+</button>
+      </div>
+      <div class="task-list" data-list="done"></div>
+    </section>
+  </main>
+
+  <div class="modal-bg" id="modal">
+    <div class="modal">
+      <h3 id="modalTitle">Add Task</h3>
+      <textarea id="taskInput" placeholder="What needs to be done?"></textarea>
+      <div class="modal-actions">
+        <button class="btn-ghost" onclick="closeModal()">Cancel</button>
+        <button class="btn-primary" onclick="confirmAdd()">Add Task</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

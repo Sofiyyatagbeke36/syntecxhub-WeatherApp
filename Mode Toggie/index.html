@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark / Light Mode - SYNTECXHUB Project 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SYNTECXHUB<span> • Project 3</span></div>
+    <div class="toggle-wrap">
+      <span class="icon-label" id="modeLabel">Light</span>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-track">
+          <span class="toggle-thumb">
+            <span class="icon sun">☀️</span>
+            <span class="icon moon">🌙</span>
+          </span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Dark / Light Mode <span class="gradient">Toggle</span></h1>
+      <p>Switch themes dynamically with JavaScript. Your preference is saved in localStorage with smooth transitions.</p>
+      <div class="btns">
+        <button class="primary">Get Started</button>
+        <button class="secondary">Learn More</button>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <h3>Dynamic Colors</h3>
+        <p>Colors change instantly using JavaScript and CSS variables. No reload needed.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💾</div>
+        <h3>Saved Preference</h3>
+        <p>Your theme choice is stored in localStorage and persists after closing browser.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✨</div>
+        <h3>Smooth Transition</h3>
+        <p>All colors fade smoothly with CSS transitions for premium experience.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>Built for SYNTECXHUB - CREATE | THINK | SOLVE</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
